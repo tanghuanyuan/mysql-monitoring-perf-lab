@@ -1,10 +1,10 @@
 services:
   mysql:
-    image: mysql:8.0.40
+    image: mysql:8.0
     container_name: mysql8
     restart: unless-stopped
     environment:
-      MYSQL_ROOT_PASSWORD: Root@2026strong
+      MYSQL_ROOT_PASSWORD: 123456
       MYSQL_DATABASE: ecommerce_test
       TZ: Asia/Shanghai
     ports:
