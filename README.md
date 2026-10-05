@@ -14,7 +14,7 @@ mysql-monitoring-perf-lab/
 ├── sql/
 │   ├── 01_schema.sql  #建库、建表，定义用户、商品、订单等表结构
 │   ├── 02_seed_users_products.sql  #插入初始用户、商品等基础数据
-│   ├── 03_generate_orders_proc.sql  #创建存储过程，用于批量生成订单数据
+│   ├── 03_generate_orders_proc.sq、03_generate_users_proc.sql、03_generate_products_proc.sql  #创建存储过程，用于批量生成订单数据
 │   └── 04_index_optimization.sql3  #优化脚本，添加索引、修改查询、调整表结构等
 ├── scripts/
 │   ├── start.sh  #一键启动实验环境，可能执行 docker compose up -d、等待 MySQL 就绪等
