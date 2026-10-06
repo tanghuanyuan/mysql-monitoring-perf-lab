@@ -1,0 +1,6 @@
+#配置监控用户及权限
+CREATE USER 'exporter'@'%'
+	IDENTIFIED BY '123456'
+	WITH MAX_USER_CONNECTIONS 3;
+#exporter可查看部分
+GRANT PROCESS, REPLICATION CLIENT, SELECT ON *.* TO 'exporter'@'%';
